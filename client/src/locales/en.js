@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -126,6 +127,57 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    },
+    submitted: {
+      title: 'Submitted Orders',
+      loadError: 'Failed to load submitted orders',
+      empty: 'No restocking orders have been submitted yet.',
+      skuCount: '{count} SKUs',
+      table: {
+        orderNumber: 'Order Number',
+        orderDate: 'Order Date',
+        items: 'Items',
+        totalCost: 'Total Cost',
+        leadTime: 'Lead Time',
+        expectedDelivery: 'Expected Delivery',
+        status: 'Status'
+      }
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan replenishment spend against forecasted demand and place a restock order',
+    budget: 'Budget',
+    budgetSlider: 'Restocking budget',
+    plannedSpend: 'Planned Spend',
+    remaining: 'Remaining',
+    longestLeadTime: 'Longest Lead Time',
+    days: '{count} days',
+    recommendations: 'Recommended Items',
+    empty: 'No items can be restocked with this budget. Increase the budget to see recommendations.',
+    loadError: 'Failed to load recommendations',
+    partial: 'Partial',
+    placeOrder: 'Place Order',
+    placing: 'Placing order...',
+    orderError: 'Failed to place order',
+    confirmTitle: 'Restock order placed',
+    orderNumber: 'Order number',
+    total: 'Total',
+    leadTime: 'Lead time',
+    expectedDelivery: 'Expected delivery',
+    viewOrders: 'View in Orders',
+    table: {
+      sku: 'SKU',
+      name: 'Name',
+      trend: 'Trend',
+      onHand: 'On Hand',
+      forecastedDemand: 'Forecasted Demand',
+      recommendedQty: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      lineCost: 'Line Cost',
+      leadTime: 'Lead Time (days)'
     }
   },
 
@@ -206,7 +258,8 @@ export default {
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
-    adequate: 'Adequate'
+    adequate: 'Adequate',
+    submitted: 'Submitted'
   },
 
   // Trends

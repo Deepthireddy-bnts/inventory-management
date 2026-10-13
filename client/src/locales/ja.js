@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -126,6 +127,57 @@ export default {
       status: 'ステータス',
       expectedDelivery: '予定配達日',
       actualDelivery: '実際の配達日'
+    },
+    submitted: {
+      title: '送信済み注文',
+      loadError: '送信済み注文の読み込みに失敗しました',
+      empty: '送信済みの補充注文はまだありません。',
+      skuCount: '{count} SKU',
+      table: {
+        orderNumber: '注文番号',
+        orderDate: '注文日',
+        items: '品目',
+        totalCost: '合計コスト',
+        leadTime: 'リードタイム',
+        expectedDelivery: '予定配達日',
+        status: 'ステータス'
+      }
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予測需要に基づいて補充予算を計画し、補充注文を行います',
+    budget: '予算',
+    budgetSlider: '補充予算',
+    plannedSpend: '計画支出',
+    remaining: '残り予算',
+    longestLeadTime: '最長リードタイム',
+    days: '{count}日',
+    recommendations: '推奨品目',
+    empty: 'この予算では補充できる品目がありません。予算を増やすと推奨が表示されます。',
+    loadError: '推奨の読み込みに失敗しました',
+    partial: '一部',
+    placeOrder: '注文する',
+    placing: '注文中...',
+    orderError: '注文に失敗しました',
+    confirmTitle: '補充注文を送信しました',
+    orderNumber: '注文番号',
+    total: '合計',
+    leadTime: 'リードタイム',
+    expectedDelivery: '予定配達日',
+    viewOrders: '注文ページで確認',
+    table: {
+      sku: 'SKU',
+      name: '名称',
+      trend: 'トレンド',
+      onHand: '手持ち在庫',
+      forecastedDemand: '予測需要',
+      recommendedQty: '推奨数量',
+      unitCost: '単価',
+      lineCost: '明細金額',
+      leadTime: 'リードタイム（日）'
     }
   },
 
@@ -206,7 +258,8 @@ export default {
     backordered: 'バックオーダー',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
-    adequate: '適量'
+    adequate: '適量',
+    submitted: '送信済み'
   },
 
   // Trends
